@@ -296,8 +296,6 @@ jobs:
         ##为 Minidlna 和 Firefly 包含 ffmpeg 0.11.x（替代 0.6.x）。约 0.1MB
         echo "CONFIG_FIRMWARE_INCLUDE_FFMPEG_NEW=y" >> .config
 
-
-
         ##包含 Transmission 种子下载工具。openssl 约 1.2MB，transmission 约 1.5MB 已删除 /trunk/user/httpd/common.h
         echo "CONFIG_FIRMWARE_INCLUDE_TRANSMISSION=n" >> .config
 
@@ -309,8 +307,7 @@ jobs:
 
         ##包含 Aria2 WEB 控制界面。约 0.7MB。
         echo "CONFIG_FIRMWARE_INCLUDE_ARIA_WEB_CONTROL=n" >> .config
-
-        
+       
 
         ##下载工具 curl 必备
         echo "CONFIG_FIRMWARE_INCLUDE_CURL=y" >> .config
@@ -319,7 +316,7 @@ jobs:
         echo "CONFIG_FIRMWARE_INCLUDE_SCUTCLIENT=n" >> .config
         
         ## OpenVPN。需要 IPv6 支持。openssl 约 1.2MB，openvpn 约 0.4MB
-        echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=y" >> .config
+        echo "CONFIG_FIRMWARE_INCLUDE_OPENVPN=n" >> .config
 
         ## 广东工业校园认证
         echo "CONFIG_FIRMWARE_INCLUDE_GDUT_DRCOM=n" >> .config
